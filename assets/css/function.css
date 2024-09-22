@@ -1,0 +1,84 @@
+.main {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    /* background-image: url(https://siterost.net/uploads/temp/837506ffd6f221e7c40c9f22461eaefd.jpg); */
+    background-image: url("/Users/evgenijsemin/Desktop/Education/Web Prog/correctwork/assets/images/ph2.jpg");
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  
+    /* gap: 20px; */
+    /* padding: 20px; */
+  }
+  
+  .card {
+    /* background-color: #fff; */
+    background-color: rgba(0, 0, 0, 0.5);
+
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    /* Занимает 50% ширины с учетом отступов */
+    width: calc(50% - 20px); 
+    
+    margin: 10px; /* Отступ */
+    overflow: hidden;
+  }
+
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .card-content {
+    padding: 20px;
+  }
+
+  .card-title {
+    font-size: 1.2em; /* Уменьшен размер заголовка */
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .card-text {
+    color: #555;
+    line-height: 1.5;
+  }
+
+  .card-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 20px auto 0;
+    text-align: center;
+    width: fit-content;
+  }
+
+  .card-button:hover {
+    background-color: #0056b3; 
+  }
+
+  /* Адаптивный стиль для мобильных устройств */
+  @media (max-width: 768px) {
+    .card {
+      width: 100%; /* Занимает всю ширину экрана */
+    }
+
+    .card-title {
+      font-size: 1em; /* Уменьшен размер заголовка */
+    }
+  }
