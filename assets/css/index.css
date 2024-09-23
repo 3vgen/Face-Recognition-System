@@ -54,9 +54,22 @@ body	{
 }
 
 .main	{
-    /* margin-top:1px; 1 пиксель от шапки вниз */
-    position: relative;
-    width: 100%;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+
+  /* background-image: url(https://siterost.net/uploads/temp/837506ffd6f221e7c40c9f22461eaefd.jpg); */
+  background-image: url("/Users/evgenijsemin/Desktop/Education/Web Prog/correctwork/assets/images/ph2.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .main p{
   font-size: 15;
@@ -72,34 +85,19 @@ body	{
 }
 
 .textMain{
-  z-index: 1;
   
-  width: 50%;
-  /* left: 24%; */
-  left: 50px;
-
-  margin-top: 10px;
-  position: absolute;
-  color: white;
-  text-align: left;
-  background-color: rgba(0, 0, 0, 0.5);
-	box-shadow: -20px 0 0 rgba(0, 0, 0, 0.5), 10px 0 0 rgba(0, 0, 0, 0.5);
-  border-radius: 4px;
-}
-.imgMain {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    /* Занимает 50% ширины с учетом отступов */
+    width: 100%; 
+    
+    margin: 10px; /* Отступ */
     overflow: hidden;
-    z-index: 0;
-    text-align: center;
-    justify-content: center;
 }
-.img {
-    /* margin-top: 20px; */
-    width: 100%;
-    /* opacity: 0.8; */
-    /* display: block; */
 
-    /* filter: blur(5px);  */
-}
 
 p {
   line-height: 1.6;
@@ -112,8 +110,7 @@ p {
   @media screen and (max-width: 800px) {
     .main {
       overflow-y: auto;
-      height: 100vh;
-      padding: 20px;
+      width: 100%;
     }
 
     .header a {
@@ -125,14 +122,6 @@ p {
       float: none;
     }
 
-    .textMain {
-      width: 95%;
-      left: 2.5%;
-      font-size: 14px;
-  }
-  .img {
-      width: 100%;
-  }
   }
 
   @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
