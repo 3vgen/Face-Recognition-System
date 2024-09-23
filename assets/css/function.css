@@ -22,7 +22,7 @@
   
   .card {
     /* background-color: #fff; */
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.65);
     color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -34,9 +34,9 @@
   }
 
   .card img {
-    width: 30%;
-    height: 200px;
-    object-fit: cover;
+    padding: 10px;
+    width: 150px;
+    height: 150px;
   }
 
   .card-content {
@@ -80,5 +80,9 @@
 
     .card-title {
       font-size: 1em; /* Уменьшен размер заголовка */
+    }
+    .card img {
+      padding: 20px;
+      object-fit: cover;
     }
   }
