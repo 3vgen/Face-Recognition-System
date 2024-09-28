@@ -1,8 +1,4 @@
 /* Style the container with a rounded border, grey background and some padding and margin */
-.main {
-  background-image: url("/Users/evgenijsemin/Desktop/Education/Web Prog/correctwork/assets/images/ph3.jpg");
-
-}
 .container {
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
