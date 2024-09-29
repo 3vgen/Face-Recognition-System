@@ -1,12 +1,19 @@
 /* Style the container with a rounded border, grey background and some padding and margin */
+.main {
+  background-image: url("");
+  /* background-color: ddd; */
+  background-color: #ffffff;
+
+  /* background-color: 2559A4; */
+
+}
 .container {
-    background-color: rgba(0, 0, 0, 0.5);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    color: white;
-    border-radius: 5px;
+    background-color: #ddd;
+    border: 2px solid #ccc;
+    border-radius: 15px;
     padding: 16px;
     margin: 16px 20px;
-    width: calc(100%);
+    width: 100%;
 }
 /* Clear floats after containers */
 .container::after {
@@ -27,7 +34,87 @@
     font-size: 20px;
     margin-right: 15px;
 }
+/* Форма */
+ /* style.css */
+.comments-container {
+  background-color: #ddd;
+  padding: 16px;
+  margin: 16px 20px;
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+}
 
+h2 {
+  margin-top: 0;
+}
+
+#comments-list {
+  margin-bottom: 20px;
+}
+
+.comment {
+  border: 1px solid #eee;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.comment-author {
+  font-weight: bold;
+}
+
+.comment-form {
+  margin-top: 20px;
+}
+
+.comment-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 15;
+
+}
+
+.comment-form textarea {
+  height: 100px;
+}
+
+.comment-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+    /* float: left; */
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px; 
+}
+
+.comment-form button:hover {
+  background-color: #0056b3;
+}
+#name {
+  width: 200px;
+}
+/* Форма */
 /* Add media queries for responsiveness. This will center both the text and the image inside the container */
 @media (max-width: 500px) {
   .container {

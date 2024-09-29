@@ -12,9 +12,9 @@
 <div class="header">
     <a href="#default" class="logo">Система<br>распознования<br>лиц</a>
     <div class="header-right">
-      <a class="active" href="#home">Главная</a>
+      <a href="index.html">Главная</a>
       <a href="#contact">Контакты</a>
-      <a href="reviews.html">О нас</a>
+      <a class="active" href="reviews.html">О нас</a>
       <a href="function.html">Функции</a>
 
     </div>
@@ -23,6 +23,24 @@
 <body>
     </div>
     <div class="main">
+        <div class="comments-container">
+            <h2>Комментарии</h2>
+            <div id="comments-list">
+              </div>
+        
+            <div class="comment-form">
+              <h3>Оставить комментарий</h3>
+              <label for="name">Имя:</label>
+              <input type="text" id="name" name="name" required>
+        
+              <label for="message">Сообщение:</label>
+              <textarea id="message" name="message" required></textarea>
+        
+              <button id="submit-comment">Отправить</button>
+            </div>
+          </div>
+        
+
         <div class="container">
             <img src="bandmember.jpg" alt="Avatar" style="width:90px">
             <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
