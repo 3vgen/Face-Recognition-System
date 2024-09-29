@@ -1,14 +1,16 @@
 /* Style the container with a rounded border, grey background and some padding and margin */
 .main {
+  
   background-image: url("");
-  /* background-color: ddd; */
   background-color: #ffffff;
+  background-image: url("/Users/evgenijsemin/Desktop/Education/Web Prog/correctwork/assets/images/ph2.jpg");
 
-  /* background-color: 2559A4; */
 
 }
 .container {
     background-color: #ddd;
+    background-color: rgba(205, 205, 205, 0.787);
+
     border: 2px solid #ccc;
     border-radius: 15px;
     padding: 16px;
