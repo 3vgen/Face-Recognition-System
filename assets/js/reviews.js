@@ -36,6 +36,8 @@ function extractLinks(text) {
 
 const itemsList = document.getElementById('items-list');
     const addItemButton = document.getElementById('submit-comment');
+    const deleteItemButton = document.getElementById('delete-comment');
+
     const itemTextInput = document.getElementById('name');
     const itemMessageInput = document.getElementById('message')
 
@@ -50,4 +52,8 @@ const itemsList = document.getElementById('items-list');
       <p>${textWithoutLinks}</p>`
 
       itemsList.appendChild(newItem);
+    });
+
+    deleteItemButton.addEventListener('click', () => {
+      location.reload(true);
     });

@@ -51,12 +51,14 @@ body	{
     margin: 0px;
     font-family: 'Roboto', sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
     background-color: #121726;
+    position: relative;
 }
 
 .main	{
   margin: 0;
   font-family: 'Arial', sans-serif;
   display: flex;
+  padding-bottom: 150px;
   flex-wrap: wrap;
   justify-content: left;
 
@@ -138,20 +140,16 @@ p {
       min-height: 100vh;
   }
   footer{
-      position: relative;/*относительное позиционирование*/
+      /* margin-top:  1000px; */
+      position: fixed;/*относительное позиционирование*/
       width: 100%;/*на всю ширину*/
+      bottom: 0;
       padding: 20px 50px;/*поля для контента*/
       display: flex;
       justify-content: center;/*в центре по горизонтали*/
       align-items: center;/*в центре по вертикали*/
       flex-direction: column;
-  }
-  footer .wave{
-      position: absolute;/*абсолютное позиционирование*/
-      top: -100px;
-      left: 0;
-      width: 100%;
-      height: 100px;
+      background-color: 121726;
   }
   .social,
   .menu{
