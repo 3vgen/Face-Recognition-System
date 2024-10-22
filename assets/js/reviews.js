@@ -63,6 +63,7 @@ function hasBadWords(text) {
         "идиот",
         "глуп",
         "банан",
+        "дур",
       ];
   const stemmedWords = text.toLowerCase().split(" ").map(word => stemmer(word));
   for (const word of stemmedWords) {
@@ -112,7 +113,7 @@ const itemsList = document.getElementById('items-list');
       const itemMessageText = itemMessageInput.value.trim();
       const textWithoutLinks = extractLinks(itemMessageText)
       if(hasBadWords(textWithoutLinks)){
-        alert('Неправильный ответ, попробуйте еще раз.');
+        alert('Ваш комментарий содержит недопустимые слова!');
       }
       else{
         const newItem = document.createElement('div');
@@ -121,9 +122,13 @@ const itemsList = document.getElementById('items-list');
         <p>${textWithoutLinks}</p>`
         itemsList.appendChild(newItem);
       }
-      
+      document.getElementById('name').value = '';
+      document.getElementById('message').value = '';
+
     });
 
     deleteItemButton.addEventListener('click', () => {
-      location.reload(true);
+      // location.reload(true);
+      document.getElementById('name').value = '';
+      document.getElementById('message').value = '';
     });

@@ -1,0 +1,122 @@
+<!DOCTYPE html5>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Комментарии</title>
+    <style>
+        .button_class{
+            width: 100%;
+            height: auto;
+            display: grid;
+            padding: 10;
+        }
+        .comment_button {
+  padding: 16px 42px;
+  border-radius: 3px;
+    color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: relative;
+            margin: 20px;
+  
+}
+    .comment_button:hover {
+    background-color: #555;
+  }
+        
+    .canvas{
+        border: 1px black solid;
+    }
+    #sectionID{
+        width: auto;
+        height: auto;
+        justify-self: center;
+        margin-bottom: 0px;
+        max-height: 100px;
+        border: 1px black solid;
+        padding: 0px;
+        display: grid;
+        justify-content: center;
+        
+    }
+        .section p{
+            font-size: 20px;
+        }
+    #containerID{
+        display: grid;
+        
+        min-height: 140px;
+       
+    }
+    #textCanvas{
+        display: none;
+        height: auto;
+        max-height: 100px;
+    }
+        #image{
+            display: none;
+        } 
+        #text{
+            font-size: 30px;
+        }
+    #containercomments
+        {
+            padding-bottom: 50px
+        }
+        input[type="text"]{
+            font-size: 30px;
+        }
+        .comment_input{
+            margin: 0 20 20 20;
+        }
+        .captcha_inputs{
+            margin: 0 20 20 20;
+        }
+    </style>
+</head>
+<body>
+    <!-- <header class="dropdown">
+        <button class="dropbtn">
+                <h1><a class="drop"  href="../index.html">Логистическая информационная система</a></h1>
+        </button> 
+    </header> -->
+    <div class="container" id="containerID">    
+        <div class="section" id="sectionID">
+            <canvas id='textCanvas'></canvas>
+            
+            <h3 id='text' class="captcha">Наведись для отображения капчи</h3>
+        </div>
+    </div>
+
+    <input type="text" placeholder="Введите комментарий" class="comment_input section"> 
+    
+    <input type="text" placeholder="Введите капчу" class="captcha_inputs section">
+    
+    <div display='grid' width='100px'><button class="comment_button">отправить</button></div>
+
+    
+    <div class="container" id ="containercomments"     padding-bottom="50px">
+        
+        <div class="section">
+            <h2>Отзывы о нашем продукте</h2>
+        </div>
+        <div class="section"> 
+                <p>Отличное программное обеспечение</p> 
+        </div>
+        <div class="section"> 
+                <p>Все круто!</p> 
+        </div>
+        <div class="section"> 
+                <p>Все работает, жаль что так дорого.</p> 
+        </div> 
+         
+    </div>
+
+    <footer>
+        <p>&reg; 2024 Логистическая информационная система. Лабораторная работа.</p>
+    </footer>
+    <script src="assets/js/Captchacomments.js"></script>
+</body>
+</html>

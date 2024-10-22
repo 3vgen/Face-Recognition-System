@@ -23,17 +23,19 @@
 <body>
       <div class="main">
         <div class="comments-container">
-            <h2>Комментарии</h2>
+            <h2>Оставьте комментарий</h2>
             <div id="comments-list"></div>
         
             <div class="comment-form">
-              <h3>Оставить комментарий</h3>
               <label for="name">Имя:</label>
-              <input type="text" id="name" name="name" required>
+              <input type="text" id="name" placeholder="Введите имя" name="name" required>
+              <!-- <input type="text" placeholder="Введите капчу" class="captcha_inputs section"> -->
         
               <label for="message">Сообщение:</label>
-              <textarea id="message" name="message" required></textarea>
-        
+              <textarea id="message" placeholder="Оставьте свой комментарий" name="message" required></textarea>
+
+              <!-- <input type="text" placeholder="Введите комментарий" class="comment_input section">  -->
+              
               <button id="submit-comment">Отправить</button>
               <button id="delete-comment">Удалить</button>
 

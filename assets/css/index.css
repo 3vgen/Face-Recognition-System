@@ -1,9 +1,12 @@
 
 /* =============== HEADER =============== */
 .header {
+    position: fixed;
+    width: 100%;
+
     overflow: hidden;
     background-color: #121726;
-    padding: 20px 10px;
+    padding: 12px 10px;
   }
   
   /* Стиль ссылок шапки */
@@ -54,11 +57,31 @@ body	{
     position: relative;
 }
 
+.main button {
+  background-color: #1b2938;
+  color: #fff;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+    /* float: left; */
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px; 
+}
+
 .main	{
-  margin: 0;
+  padding-top: 110px;
+  margin: 0px;
   font-family: 'Arial', sans-serif;
   display: flex;
-  padding-bottom: 150px;
+  /* padding-bottom: 150px; */
   flex-wrap: wrap;
   justify-content: left;
 
@@ -113,6 +136,7 @@ p {
     .main {
       overflow-y: auto;
       width: 100%;
+      padding-top: 310px;
     }
 
     .header a {
@@ -128,11 +152,13 @@ p {
 
   @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
   *{
-      /* margin: 0; */
-      /* padding: 0; */
+      margin: 0;
+      padding: 0; 
       box-sizing: border-box;/*метод расчета размеров бокса*/
       font-family: 'Poppins', sans-serif;/*название шрифта*/
   }
+  /* =============== FOOTER =============== */
+
   footer body {
       display: flex;/*флексбокс сетка*/
       flex-direction: column;/*направление главной оси*/
@@ -141,7 +167,9 @@ p {
   }
   footer{
       /* margin-top:  1000px; */
-      position: fixed;/*относительное позиционирование*/
+      /* position: fixed; */
+      position: relative;/*относительное позиционирование*/
+
       width: 100%;/*на всю ширину*/
       bottom: 0;
       padding: 20px 50px;/*поля для контента*/
